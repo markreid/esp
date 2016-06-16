@@ -1,0 +1,38 @@
+{
+  "name": "esp",
+  "version": "1.0.0",
+  "description": "boilerplate app based on express, socket.io and passport",
+  "main": "index.js",
+  "engines": {
+    "node": ">6.0.0"
+  },
+  "dependencies": {
+    "connect-redis": "^3.0.2",
+    "cookie": "^0.3.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0",
+    "socket.io": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markreid/esp.git"
+  },
+  "keywords": [
+    "express",
+    "socket.io",
+    "passport",
+    "boilerplate"
+  ],
+  "author": "Mark Reid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markreid/esp/issues"
+  },
+  "homepage": "https://github.com/markreid/esp#readme"
+}

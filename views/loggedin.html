@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP</title>
+  <style type="text/css">
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #777;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <p>If you can see this message, you're logged in.</p>
+  <p id="socket-console"></p>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    socket.on('connect', function(){
+      document.getElementById('socket-console').textContent = 'And if you can see this, you\'re connected to the socket server.';
+    });
+    socket.on('error', function(error) {
+      document.getElementById('socket-console').textContent = 'If you see this, there was an error connecting to the socket: ' + error;
+    });
+  </script>
+</body>
+</html>
